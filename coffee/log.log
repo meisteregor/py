@@ -1,0 +1,14 @@
+2018-04-16 18:30:27,513 - root : - INFO - An instance of Managers called andreimalahov created
+2018-04-16 18:30:27,513 - root : - INFO - An instance of Salesmen called rukibazuki created
+2018-04-16 18:30:27,513 - root : - INFO - An instance of Salesmen called dianashurygina created
+2018-04-16 18:30:27,515 - root : - INFO - An instance of Salesmen called egorrashkevich created
+2018-04-16 18:30:27,515 - root : - DEBUG - trying to connect with: belka majorych salesman
+2018-04-16 18:30:27,515 - root : - WARNING - access denied to belka majorych salesman
+2018-04-16 18:31:25,858 - root : - INFO - An instance of Salesmen called belkamajorych created
+2018-04-16 18:31:25,858 - root : - DEBUG - trying to connect with: belka majorych salesman
+2018-04-16 18:31:25,858 - root : - INFO - salesman: belka majorych connected successfully!
+2018-04-16 18:31:59,171 - root : - INFO - Salesman belkamajorych made a deal on sum: 1.9
+2018-04-16 18:32:17,536 - root : - INFO - Salesman belkamajorych made a deal on sum: 0
+2018-04-16 18:33:02,730 - root : - INFO - Salesman belkamajorych made a deal on sum: 6.3
+2018-04-16 18:33:08,601 - root : - INFO - salesman belka majorych closed terminal session
+2018-04-16 18:33:08,614 - root : - INFO - Box belongs to belkamajorych with [<utils.shop.Check object at 0x04B2BF10>, <utils.shop.Check object at 0x04BB5FD0>, <utils.shop.Check object at 0x04BBEBF0>] created and added to db
