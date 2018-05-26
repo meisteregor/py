@@ -1,0 +1,6 @@
+andrei malahov manager
+ruki bazuki salesman
+diana shurygina salesman
+egor rashkevich salesman
+egor gulenkov salesman
+belka majorych salesman

@@ -1,0 +1,12 @@
+transport.py[LINE:1687]# INFO [2018-02-01 23:04:27,214]  Connected (version 2.0, client OpenSSH_7.4p1)
+transport.py[LINE:1687]# INFO [2018-02-01 23:04:27,338]  Authentication (publickey) failed.
+transport.py[LINE:1687]# INFO [2018-02-01 23:04:27,394]  Authentication (password) successful!
+sftp.py[LINE:131]# INFO [2018-02-01 23:04:28,407]  [chan 1] Opened sftp connection (server version 3)
+ssh_main_restyled.py[LINE:97]# INFO [2018-02-01 23:04:28,420]  Public key was successfully added to remote machine!
+sftp.py[LINE:131]# INFO [2018-02-01 23:04:28,420]  [chan 1] sftp session closed.
+transport.py[LINE:1687]# INFO [2018-02-01 23:04:28,476]  Connected (version 2.0, client OpenSSH_7.4p1)
+transport.py[LINE:1687]# INFO [2018-02-01 23:04:28,576]  Authentication (publickey) failed.
+transport.py[LINE:1687]# INFO [2018-02-01 23:04:28,617]  Authentication (password) successful!
+sftp.py[LINE:131]# INFO [2018-02-01 23:04:29,612]  [chan 1] Opened sftp connection (server version 3)
+ssh_main_restyled.py[LINE:97]# INFO [2018-02-01 23:04:29,627]  Public key was successfully added to remote machine!
+sftp.py[LINE:131]# INFO [2018-02-01 23:04:29,627]  [chan 1] sftp session closed.

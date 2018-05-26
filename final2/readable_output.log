@@ -1,0 +1,148 @@
+2018-04-21 17:20:06,491 test_cases.network DEBUG    =============== CONNECTION STAGE ===============
+2018-04-21 17:20:06,492 test_cases.network INFO     checking local internet connection...
+2018-04-21 17:20:07,507 test_cases.network DEBUG    * SUCCESS
+2018-04-21 17:20:07,507 test_cases.network INFO     checking host availability...
+2018-04-21 17:20:08,515 test_cases.network DEBUG    * SUCCESS
+2018-04-21 17:20:08,518 test_cases.connect DEBUG    Keys for SSH generated!
+2018-04-21 17:20:08,613 test_cases.connect DEBUG    Keys for SSH added to the machines!
+2018-04-21 17:20:09,275 test_cases.connect INFO     Setting passwordless SSH: *DONE
+2018-04-21 17:20:09,275 test_cases.network INFO     checking remote internet connection...
+2018-04-21 17:20:13,150 test_cases.network DEBUG    * SUCCESS
+
+2018-04-21 17:20:13,151 test_cases.nfs DEBUG    =============== NFS SETUP STAGE ===============
+2018-04-21 17:20:13,155 test_cases.nfs DEBUG    Local dir for mount: READY
+2018-04-21 17:20:13,538 test_cases.nfs DEBUG    Remote dir for mount: READY
+2018-04-21 17:20:13,930 test_cases.nfs INFO     Getting NFS packages: *SUCCESS
+2018-04-21 17:21:55,568 test_cases.nfs INFO     Getting NFS packages: *SUCCESS
+2018-04-21 17:21:56,081 test_cases.nfs DEBUG    prepare server's config for mounting: *SUCCESS 
+2018-04-21 17:21:56,601 test_cases.nfs INFO     Restarting rpcbind....
+2018-04-21 17:21:56,602 test_cases.nfs DEBUG    * SUCCESS
+2018-04-21 17:21:57,813 test_cases.nfs INFO     Restarting nfs....
+2018-04-21 17:21:57,813 test_cases.nfs DEBUG    * SUCCESS
+2018-04-21 17:21:59,120 test_cases.nfs INFO     Disabling firewalls....
+2018-04-21 17:21:59,121 test_cases.nfs DEBUG    * SUCCESS
+2018-04-21 17:22:00,162 test_cases.nfs INFO     Stopping firewalls....
+2018-04-21 17:22:00,163 test_cases.nfs DEBUG    * SUCCESS
+2018-04-21 17:22:00,406 test_cases.nfs INFO     NFS mount: *SUCCESS
+
+2018-04-21 17:22:00,407 test_cases.tc_1 DEBUG    ================== TEST STAGE ==================
+2018-04-21 17:22:00,407 test_cases.tc_1 INFO     Create a file in a share directory. Read-write config has been set *(rw, sync)
+2018-04-21 17:22:00,410 test_cases.tc_1 INFO     Step 1 is PASSED
+2018-04-21 17:22:00,410 test_cases.tc_1 DEBUG    You changed a directory
+2018-04-21 17:22:00,416 test_cases.tc_1 DEBUG    Your work directory is /nfs/general
+ 
+2018-04-21 17:22:00,432 test_cases.tc_1 INFO     Step 2 is PASSED
+2018-04-21 17:22:00,432 test_cases.tc_1 DEBUG    A file has been created 
+2018-04-21 17:22:00,441 test_cases.tc_1 INFO     Step 3 is PASSED
+2018-04-21 17:22:00,442 test_cases.tc_1 DEBUG    You look through a file via cat 
+2018-04-21 17:22:00,450 test_cases.tc_1 DEBUG    A list of files in current directory: 
+ file_for_test
+ 
+2018-04-21 17:22:00,850 test_cases.tc_2 INFO     Rename a file from a share directory. Read-write config has been set *(rw, sync)
+2018-04-21 17:22:01,270 test_cases.tc_2 INFO     Step 1 is PASSED
+2018-04-21 17:22:01,271 test_cases.tc_2 DEBUG    Remote command has been SUCCESSFUL
+2018-04-21 17:22:01,271 test_cases.tc_2 INFO     Step 2 is PASSED
+2018-04-21 17:22:01,271 test_cases.tc_2 DEBUG    You changed a directory
+2018-04-21 17:22:01,275 test_cases.tc_2 DEBUG    Your work directory is /nfs/general
+ 
+2018-04-21 17:22:01,290 test_cases.tc_2 INFO     Step 3 is PASSED
+2018-04-21 17:22:01,290 test_cases.tc_2 DEBUG    The file was renamed
+2018-04-21 17:22:01,298 test_cases.tc_2 DEBUG    A list of files in current directory: 
+ file_for_test_2
+ 
+2018-04-21 17:22:01,682 test_cases.tc_3 INFO     Remove a file from a share directory. Read-write config has been set *(rw, sync)
+2018-04-21 17:22:02,064 test_cases.tc_3 INFO     Step 1 is PASSED
+2018-04-21 17:22:02,064 test_cases.tc_3 DEBUG    Remote command has been SUCCESSFUL
+2018-04-21 17:22:02,064 test_cases.tc_3 INFO     Step 2 is PASSED
+2018-04-21 17:22:02,064 test_cases.tc_3 DEBUG    You changed a directory
+2018-04-21 17:22:02,068 test_cases.tc_3 DEBUG    Your work directory is /nfs/general
+ 
+2018-04-21 17:22:02,081 test_cases.tc_3 INFO     Step 3 is PASSED
+2018-04-21 17:22:02,081 test_cases.tc_3 DEBUG    The file was removed
+2018-04-21 17:22:02,091 test_cases.tc_3 DEBUG    A list of files in current directory: 
+  
+2018-04-21 17:22:02,470 test_cases.tc_4 INFO     Copy a file to a share directory. Read-write config has been set *(rw, sync)
+2018-04-21 17:22:02,898 test_cases.tc_4 INFO     Step 1 is PASSED
+2018-04-21 17:22:02,898 test_cases.tc_4 DEBUG    Remote command has been SUCCESSFUL
+2018-04-21 17:22:02,905 test_cases.tc_4 INFO     Step 2 is PASSED
+2018-04-21 17:22:02,905 test_cases.tc_4 DEBUG    The directory has been created 
+2018-04-21 17:22:02,905 test_cases.tc_4 INFO     Step 3 is PASSED
+2018-04-21 17:22:02,906 test_cases.tc_4 DEBUG    You changed a directory
+2018-04-21 17:22:02,910 test_cases.tc_4 DEBUG    Your work directory is /nfs/general
+ 
+2018-04-21 17:22:02,922 test_cases.tc_4 INFO     Step 4 is PASSED
+2018-04-21 17:22:02,922 test_cases.tc_4 DEBUG    The file was copied 
+2018-04-21 17:22:02,928 test_cases.tc_4 INFO     Step 5 is PASSED
+2018-04-21 17:22:02,928 test_cases.tc_4 DEBUG    You look through a file via cat 
+2018-04-21 17:22:02,939 test_cases.tc_4 DEBUG    A list of files in current directory: 
+ file_for_test
+ 
+2018-04-21 17:22:03,319 test_cases.tc_5 INFO     Move a file into a share directory. Read-write config has been set *(rw, sync)
+2018-04-21 17:22:03,323 test_cases.tc_5 INFO     Step 1 is PASSED
+2018-04-21 17:22:03,324 test_cases.tc_5 DEBUG    The directory has been created 
+2018-04-21 17:22:03,324 test_cases.tc_5 INFO     Step 2 is PASSED
+2018-04-21 17:22:03,324 test_cases.tc_5 DEBUG    You changed a directory
+2018-04-21 17:22:03,328 test_cases.tc_5 DEBUG    Your work directory is /home/egor/dir_for_test
+ 
+2018-04-21 17:22:03,333 test_cases.tc_5 INFO     Step 3 is PASSED
+2018-04-21 17:22:03,334 test_cases.tc_5 DEBUG    A file has been created 
+2018-04-21 17:22:03,365 test_cases.tc_5 INFO     Step 4 is PASSED
+2018-04-21 17:22:03,365 test_cases.tc_5 DEBUG    The file was moved 
+2018-04-21 17:22:03,369 test_cases.tc_5 DEBUG    A list of files in current directory: 
+  
+2018-04-21 17:22:03,370 test_cases.tc_5 INFO     Step 5 is PASSED
+2018-04-21 17:22:03,371 test_cases.tc_5 DEBUG    You changed a directory
+2018-04-21 17:22:03,373 test_cases.tc_5 DEBUG    Your work directory is /nfs/general
+ 
+2018-04-21 17:22:03,379 test_cases.tc_5 DEBUG    A list of files in current directory: 
+ file_for_test
+ 
+2018-04-21 17:22:03,775 test_cases.tc_6 INFO     Execute a file from a share directory. Read-write config has been set *(rw, sync)
+2018-04-21 17:22:03,775 test_cases.tc_6 INFO     Step 1 is PASSED
+2018-04-21 17:22:03,775 test_cases.tc_6 DEBUG    You changed a directory
+2018-04-21 17:22:03,779 test_cases.tc_6 DEBUG    Your work directory is /nfs/general
+ 
+2018-04-21 17:22:03,801 test_cases.tc_6 INFO     Step 2 is PASSED
+2018-04-21 17:22:03,802 test_cases.tc_6 DEBUG    A file has been created 
+2018-04-21 17:22:03,811 test_cases.tc_6 DEBUG    A list of files in current directory: 
+ file_for_test
+ 
+2018-04-21 17:22:03,825 test_cases.tc_6 INFO     Step 3 is PASSED
+2018-04-21 17:22:03,825 test_cases.tc_6 DEBUG    Record data into the file has been completed successfully
+2018-04-21 17:22:03,828 test_cases.tc_6 DEBUG    Data inside file is ['echo "vampires pretending to be humans pretending to be vampires"\n']
+2018-04-21 17:22:03,833 test_cases.tc_6 INFO     Step 4 is PASSED
+2018-04-21 17:22:03,834 test_cases.tc_6 DEBUG    The file was executed successfully
+2018-04-21 17:22:05,086 test_cases.tc_7 INFO     Move a file into a share directory. Read-only config has been set *(ro, sync)
+2018-04-21 17:22:05,091 test_cases.tc_7 INFO     Step 1 is PASSED
+2018-04-21 17:22:05,091 test_cases.tc_7 DEBUG    The directory has been created 
+2018-04-21 17:22:05,091 test_cases.tc_7 INFO     Step 2 is PASSED
+2018-04-21 17:22:05,092 test_cases.tc_7 DEBUG    You changed a directory
+2018-04-21 17:22:05,096 test_cases.tc_7 DEBUG    Your work directory is /home/egor/dir_for_test
+ 
+2018-04-21 17:22:05,100 test_cases.tc_7 INFO     Step 3 is PASSED
+2018-04-21 17:22:05,100 test_cases.tc_7 DEBUG    A file has been created 
+2018-04-21 17:22:05,109 test_cases.tc_7 INFO     Step 4 is FAILED
+2018-04-21 17:22:05,110 test_cases.tc_7 ERROR    mv: inter-device move failed: ‘file_for_test’ to ‘/nfs/general/file_for_test’; unable to remove target: Read-only file system
+
+2018-04-21 17:22:05,115 test_cases.tc_7 DEBUG    A list of files in current directory: 
+ file_for_test
+ 
+2018-04-21 17:22:05,116 test_cases.tc_7 INFO     Step 5 is PASSED
+2018-04-21 17:22:05,116 test_cases.tc_7 DEBUG    You changed a directory
+2018-04-21 17:22:05,120 test_cases.tc_7 DEBUG    Your work directory is /nfs/general
+ 
+2018-04-21 17:22:05,127 test_cases.tc_7 DEBUG    A list of files in current directory: 
+  
+2018-04-21 17:22:05,506 test_cases.tc_8 INFO     Remove a file from a share directory. Read-only config has been set *(ro, sync)
+2018-04-21 17:22:05,982 test_cases.tc_8 INFO     Step 1 is PASSED
+2018-04-21 17:22:05,982 test_cases.tc_8 DEBUG    Remote command has been SUCCESSFUL
+2018-04-21 17:22:05,983 test_cases.tc_8 INFO     Step 2 is PASSED
+2018-04-21 17:22:05,983 test_cases.tc_8 DEBUG    You changed a directory
+2018-04-21 17:22:05,986 test_cases.tc_8 DEBUG    Your work directory is /nfs/general
+ 
+2018-04-21 17:22:06,002 test_cases.tc_8 INFO     Step 3 is FAILED
+2018-04-21 17:22:06,002 test_cases.tc_8 ERROR    rm: cannot remove ‘./file_for_test’: Read-only file system
+
+2018-04-21 17:22:06,011 test_cases.tc_8 DEBUG    A list of files in current directory: 
+ file_for_test
+ 
