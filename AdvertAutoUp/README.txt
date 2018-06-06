@@ -2,7 +2,7 @@ UTILITY PURPOSE:
 - Automation of everyday rising of the adverts into customers rooms on sites
 
 UTILITY USAGE:
-- >pyinstaller -w -F -i "path_to_shotcut" aau.py
+- instanciate ../dist/aau.exe via PowerShell: >pyinstaller -w -F -i "path_to_shotcut" aau.py
 - Place your login and site data into AdvertAutoUp/constants.py
 - Crate aau.exe shortcut from AdvertAutoUp/dist/ and place it into C:\Users\USERNAME\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
 to make it run on each start of the system
