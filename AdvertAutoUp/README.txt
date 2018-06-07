@@ -11,7 +11,6 @@ to make it run on each start of the system
 REQUIREMENTS:
 - Win10
 - Google Chrome Browser
-- Python2/3
 - Selenium Chrome Driver nearby aau.exe(included by default)
 
 NOTES:
