@@ -18,5 +18,4 @@ NOTES:
 - As an addition utility also starts 2 DB files to track some stats:
     1) times_i_did_it.txt: for tracking successful ups
     2) times_master_called_me.txt: each run of the utility
-
--
+- This utility can be distributed in the form where all the execution runs in the shadow mode to aviod interrupiton of your working processes.
