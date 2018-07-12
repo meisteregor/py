@@ -5,4 +5,4 @@ ADVERT_LINK = "https://kolodischi.by/profile/ads"
 
 LOGIN = "here could be your advertisement"
 PASSWORD = "contact me"
-UP_ADVERT_LINK = "its_not_very_expensive"
+UP_ADVERT_LINK = "its_not_so_expensive"
