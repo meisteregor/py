@@ -30,31 +30,6 @@ logging.basicConfig(level=logging.INFO,
 port = 22  # Port is an only constant as it usually 22 for SSH connection
 
 
-# class Response(object):
-#     def __init__(self, out_, err_, exit_):
-#         self._out = out_
-#         self._err = err_
-#         self._exit = exit_
-#
-#     @property
-#     def out(self):
-#         if hasattr(self._out, "readlines"):
-#             self._out = self.readlines()
-#         return self._out
-#
-#     @property
-#     def error(self):
-#         return self._err
-#
-#     @property
-#     def exit(self):
-#         return self._exit
-#
-#     @property
-#     def is_success(self):
-#         return not self._err and self._exit == 0
-#
-#
 def run_remote_cmd(cmd):
     assert isinstance(cmd, str)
     # Splitting output into basic sections
