@@ -77,10 +77,7 @@ def terminal():
 
                 # The 6th requirement of "The script should" doing dump on flight to make data reusable for next runs
                 with open("sale_details.txt", "a") as f:
-                    f.write(args.name + args.surname)
-                    f.write(' ')
-                    f.write(str(check.check_price))
-                    f.write('\n')
+                    f.write(args.name + args.surname + ' ' + str(check.check_price) + '\n')
 
                 # The 7th requirement of "The script should" and doing dumps on flight also
                 # Create dir, change dir, drop <salesman>.txt files, return path, OS compatibility.
@@ -90,12 +87,8 @@ def terminal():
                     working_dir = os.getcwd()  # Need to return here after dumping
                     os.chdir(os.getcwd() + '\\external_place')
                     with open(args.name + args.surname + ".txt", "a") as f:
-                        f.write(strftime("(%Y-%m-%d-%H:%M:%S)", gmtime()))
-                        f.write(' ')
-                        f.write(str(check.check_price))
-                        f.write(' ')
-                        f.write(str(deal_tuple))
-                        f.write('\n')
+                        f.write(strftime("(%Y-%m-%d-%H:%M:%S)", gmtime()) + ' ' + str(check.check_price) + ' ' + str(
+                            deal_tuple) + '\n')
                     os.chdir(working_dir)
                 elif platform.system() == 'Linux':
                     if not os.path.exists(os.getcwd() + '/external_place'):
@@ -103,12 +96,8 @@ def terminal():
                     working_dir = os.getcwd()  # We need to remember current dir to return it later
                     os.chdir(os.getcwd() + '/external_place')
                     with open(args.name + args.surname + ".txt", "a") as f:
-                        f.write(strftime("(%Y-%m-%d-%H:%M:%S)", gmtime()))
-                        f.write(' ')
-                        f.write(str(check.check_price))
-                        f.write(' ')
-                        f.write(str(deal_tuple))
-                        f.write('\n')
+                        f.write(strftime("(%Y-%m-%d-%H:%M:%S)", gmtime()) + ' ' + str(check.check_price) + ' ' + str(
+                            deal_tuple) + '\n')
                     os.chdir(working_dir)  # Return to a starting path
                 else:
                     raise OSError('Your OS is not supported')
@@ -121,12 +110,7 @@ def terminal():
                 box = CheckBox(salesman_box)  # Calling an instance of CheckBox to wrap Checks
 
                 with open("sale_details_sum.txt", "a") as f:
-                    f.write(args.name + args.surname)
-                    f.write(' ')
-                    f.write(str(box.check_box_length))
-                    f.write(' ')
-                    f.write(str(box.check_box_price))
-                    f.write('\n')
+                    f.write(args.name + args.surname + ' ' + str(box.check_box_length) + ' ' + str(box.check_box_price) + '\n')
                 logging.info(
                     'Box belongs to {} with {} created and added to db'.format(args.name + args.surname, salesman_box))
                 break
