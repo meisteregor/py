@@ -1,6 +1,6 @@
 UTILITY PURPOSE:
 
-I tried to implemented something like terminals in KFC. All you need at your workplace is to press colorful
+I tried to implement something like terminals in KFC. All you need at your workplace is to press colorful
 buttons and check out your clients' menu orders. Unfortunately, instead of buttons we will simply use key words which are
 instances of MenuItems. After adding it one by one (imagine your finger clicking) you have to check out visitors
 by pressing keyword "push".
