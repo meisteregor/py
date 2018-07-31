@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import logging
-from constants import *
+from utils.constants import *
 
 
 class CheckBox(object):
@@ -126,7 +126,6 @@ class Tea(Drinks):
         self.cost = cost
         self.name = name
         self.posted_by = posted_by
-
         super(Tea, self).__init__()
 
 
@@ -140,7 +139,6 @@ class Latte(Coffee):
 
 
 class Cappuccino(Coffee):
-
     def __init__(self, posted_by, name='cappuccino', cost=CAPPUCCINO_COST_USD):
         self.cost = cost
         self.name = name
@@ -149,7 +147,6 @@ class Cappuccino(Coffee):
 
 
 class Sugar(Additions):
-
     def __init__(self, posted_by, name='sugar', cost=SUGAR_COST_USD):
         self.cost = cost
         self.name = name
@@ -158,7 +155,6 @@ class Sugar(Additions):
 
 
 class Cream(Additions):
-
     def __init__(self, posted_by, name='cream', cost=CREAM_COST_USD):
         self.cost = cost
         self.name = name
@@ -167,7 +163,6 @@ class Cream(Additions):
 
 
 class Cinnamon(Additions):
-
     def __init__(self, posted_by, name='cinnamon', cost=CINNAMON_COST_USD):
         self.cost = cost
         self.name = name
