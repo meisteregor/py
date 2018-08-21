@@ -1,0 +1,21 @@
+Create a function “arange” that duplicates “xrange” in Python2, but can handle Long numeric type.
+
+It must support positional and/or key arguments, negative numbers for any of the argument, just like xrange does.
+
+The function must implementer as a generator, avoid any iterable return types like lists, tuples or what not.
+
+g = arange(1000000000000000000000000000000000000000000000000000000000000000000000)
+
+g = arange(30L, 2)
+
+g = arange(8, start=2, step=-3L)
+
+g = arange(9, 999, 7)
+
+etc…
+
+ 
+
+You may not implement certain cases of negative stepping etc., but the main requirement is that the function must not hang or stuck in an infinite loop in any case.
+
+At the very least, I must see a warning that such case is not allowed/not supported. If so, it would be nice of you to list the scenarios not supported or implemented yet.
