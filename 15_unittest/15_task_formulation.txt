@@ -1,0 +1,3 @@
+Remember your (passwordless connection)?
+
+Using an example from Unittests slide, try to compose and write 7 unittest for any function/method.
