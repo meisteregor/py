@@ -1,0 +1,91 @@
+Read about the “os” module, particularly “walk” function in “path” module.
+
+https://docs.python.org/2/library/os.html#os.walk
+
+https://docs.python.org/2/library/os.path.html
+
+ 
+
+1) Write a wrapper for the os.walk() function that returns a generator.
+
+The generator should give me all the files (and only files, excluding directories!) with their absolute path.
+
+Example:
+
+ 
+
+import os
+
+ 
+
+files_lazy_lister = your_wrapper(os.walk("c:\\"))
+list(files_lazy_lister)
+
+ 
+
+output example =>
+
+["C:\\Development\\ARM Embedded Toolchain\\5.4 2016q3\\uninstall.exe",
+"C:\\Development\\ARM Embedded Toolchain\\5.4 2016q3\\arm-none-eabi\\bin\\ar.exe",
+"C:\\Development\\ARM Embedded Toolchain\\5.4 2016q3\\arm-none-eabi\\bin\\as.exe",
+"C:\\Windows\\bfsvc.exe",
+"C:\\Windows\\explorer.exe", ...]
+
+ 
+
+2) Write a decorator that censors return text (sting or a list of strings) using supplied forbidden words
+
+Example:
+
+ 
+
+@censor(forbidden=("ipsum", "quis"), substitution="[CENSORED]")
+def text_producer():
+    return """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+    deserunt mollit anim id est laborum."""
+
+ 
+
+text_producer() -> "Lorem [CENSORED] dolor sit amet, consectetur adipiscing elit" …
+
+ 
+
+ 
+
+P.S. – find decorator example below
+
+ 
+
+def decorator_args_receiver(decorator_arg):
+    # use decorator_arg can be a tuning mechanism for the steps below:
+
+    def function_body_receiver(function_body):
+        
+        def function_args_receiver(function_args):
+            # perform preconditions if needed, print out statuses
+            # modify function_args if needed
+            # call something instead of function body if needed
+
+            result = function_body(function_args)
+
+            # perform teardown actions when required
+            # modify function result if needed
+            return result  # or what not
+
+        return function_args_receiver  # no parenthesis () here!
+
+    return function_body_receiver  # no parenthesis () here!
+
+
+@decorator_args_receiver(42)  # 42 will go to "decorator_arg" at the very top
+def func(x):  # func will become "function_body" at function_body_receiver
+    result = x ** 2
+    print(result)
+    return result
+
+func_result = func(100500)  # 100500 will be set to "function_args" at function_args_receiver
+
+# func_result actually will be the value you return from "function_args_receiver"
