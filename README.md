@@ -4,5 +4,4 @@
 # (02-15)enumerated folders - training tasks increased by difficulty
 # coffee - project: coffee shop terminal utility
 # final2 - project: test suite for testing of NFSv4
-# AdvertAutoUp README
-# NKStarter
+# AdvertAutoUp: tool used for rising adverts non-capture sites
