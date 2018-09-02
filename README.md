@@ -5,3 +5,4 @@
 # coffee - project: coffee shop terminal utility
 # final2 - project: test suite for testing of NFSv4
 # AdvertAutoUp: tool used for rising adverts non-capture sites
+# nkstart: one-click opening of workspace into the right window positions, coordinates and so on.
